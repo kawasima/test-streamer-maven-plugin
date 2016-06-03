@@ -5,7 +5,7 @@ Maven plugin for submitting tests to TestStreamer.
 
 ## How to switch from surefire to TestStreamer
 
-Add this profile to your pom.xml
+Append this profile to your pom.xml as following:
 
 ```xml
 <profile>
@@ -20,11 +20,11 @@ Add this profile to your pom.xml
         </configuration>
       </plugin>
       <plugin>
-        <groupId>net.unit8.maven.plugins</groupId>
+        <groupId>net.unit8.teststreamer</groupId>
         <artifactId>test-streamer-maven-plugin</artifactId>
         <version>0.1.0-SNAPSHOT</version>
         <configuration>
-          <testStreamerUrl>http://test-streamer.local:5000/test-shots</testStreamerUrl>
+          <testStreamerUrl>http://test-streamer.local:5000</testStreamerUrl>
         </configuration>
         <executions>
           <execution>
@@ -38,7 +38,6 @@ Add this profile to your pom.xml
 ```
 
 And run maven with the profile.
-
 
 ```shell
 % mvn -Ptest-streamer test

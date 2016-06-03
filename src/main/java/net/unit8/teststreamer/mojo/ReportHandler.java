@@ -1,4 +1,4 @@
-package net.unit8.maven.plugins;
+package net.unit8.teststreamer.mojo;
 
 import org.xml.sax.Attributes;
 import org.xml.sax.helpers.DefaultHandler;
@@ -8,6 +8,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /**
+ * Parse the JUnit report.
+ *
  * @author kawasima
  */
 public class ReportHandler extends DefaultHandler {

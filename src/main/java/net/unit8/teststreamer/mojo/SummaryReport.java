@@ -1,6 +1,8 @@
-package net.unit8.maven.plugins;
+package net.unit8.teststreamer.mojo;
 
 /**
+ * Stands for summary report.
+ *
  * @author kawasima
  */
 public class SummaryReport {

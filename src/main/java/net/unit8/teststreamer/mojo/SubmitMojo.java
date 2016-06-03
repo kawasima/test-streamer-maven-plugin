@@ -1,4 +1,4 @@
-package net.unit8.maven.plugins;
+package net.unit8.teststreamer.mojo;
 
 /*
  * Copyright 2001-2005 The Apache Software Foundation.
@@ -190,7 +190,7 @@ public class SubmitMojo extends AbstractMojo {
             getLog().info("No tests.");
             return false;
         } else {
-            throw new MojoExecutionException("Not success");
+            throw new MojoExecutionException("Not success. status=" + status);
         }
     }
 

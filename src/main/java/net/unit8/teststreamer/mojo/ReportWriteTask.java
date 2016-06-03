@@ -1,4 +1,4 @@
-package net.unit8.maven.plugins;
+package net.unit8.teststreamer.mojo;
 
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
@@ -7,6 +7,8 @@ import java.io.InputStream;
 import java.util.concurrent.Callable;
 
 /**
+ * Writes reports to the given directory.
+ *
  * @author kawasima
  */
 public class ReportWriteTask implements Callable {
